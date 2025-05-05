@@ -6,9 +6,9 @@ from selenium.webdriver.chrome.options import Options
 
 INTERFACE = "en0"
 DURATION = 15
-OUTPUT_DIR = "./data/raw/nytimes"
-SITE = "https://www.nytimes.com"
-LABEL = "nytimes_4"
+OUTPUT_DIR = "./data/raw/cnn"
+SITE = "https://www.cnn.com"
+LABEL = "cnn_4"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 pcap_path = os.path.join(OUTPUT_DIR, f"{LABEL}.pcap")
