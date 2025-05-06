@@ -6,9 +6,9 @@ from selenium.webdriver.chrome.options import Options
 
 INTERFACE = "en0"
 DURATION = 15
-OUTPUT_DIR = "./data/raw/cnn"
-SITE = "https://www.cnn.com"
-LABEL = "cnn_4"
+OUTPUT_DIR = "./data/raw/stack_overflow"
+SITE = "https://www.stackoverflow.com"
+LABEL = "stackoverflow8"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 pcap_path = os.path.join(OUTPUT_DIR, f"{LABEL}.pcap")
@@ -20,7 +20,7 @@ tcpdump_proc = subprocess.Popen(
     stderr=subprocess.DEVNULL
 )
 
-time.sleep(3)  # Give tcpdump time to start
+time.sleep(3)  
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
